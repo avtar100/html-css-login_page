@@ -1,0 +1,112 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Document</title>
+</head>
+<style>
+    body{
+        margin: 0;
+        padding: 0;
+        background-image: url("sky.jpg");
+        background-size: cover;
+        height: 100vh;
+        font-family: sans-serif;
+    }
+    .contact-form{
+        position: absolute;
+        top: 50%;
+        left: 50%;
+        transform: translate(-50%,-50%);
+        width: 400px;
+        height: 500px;
+        padding: 80px 40px;
+        box-sizing: border-box;
+        background-color: rgba(red, green, blue, alpha);
+        box-shadow: 0 5px 3opx #000;
+    }
+    .avatar{
+        position: absolute;
+        width: 80px;
+        height: 80px;
+        border-radius: 50%;
+        overflow: hidden;
+        top: calc(-80px/2);
+        left: calc(50% - 50px);
+        border: 10px solid #fff;
+    }
+    .contact-form h2{
+        margin: 0;
+        padding: 0 0 20px;
+        color: #fff;
+        text-align: center;
+        text-transform: uppercase;
+    }
+    .contact-form p{
+        margin: 0;
+        padding: 0;
+        font-weight: bold;
+        color: #fff;
+    }
+    .contact-form input{
+        border: none;
+        border-bottom-color: currentColor;
+        border-bottom-style: none;
+        border-bottom-width: medium;
+        width: 90%;
+        border-bottom: 2px solid #fff;
+        padding: 10px;
+        margin-bottom: 20px;
+        font-size: 14px;
+        font-weight: bold;
+        background-color: transparent;
+        color: #fff;
+    }
+    .contact-form input[type="text"],
+    .contact-form input[typr="password"]{
+        border: none;
+        border-bottom: 1px solid;
+        background: transparent;
+        outline: none;
+        height: 40px;
+        color: #fff;
+        font-size: 16px;
+    }
+    .btn2{
+        padding: 10px;
+        width: 150px;
+        border-radius: 20px;
+        background-color: rgb(10,136,43);
+        border-style: none;
+        color: #fff;
+        font-weight: 600;
+        margin: 10% 0;
+    }
+    .btn-area{
+        display: flex;
+        justify-content: center;
+    }
+    .rem{
+        text-align: center;
+        color: rgb(199,197,197);
+        font-size: 16px;
+    }
+    input[type="checkbox"]{
+        width: 5%;
+    }
+</style>
+<body>
+    <div class="contact-form">
+        <img src="back.jpg" alt="" class="avatar">
+        <form>
+            <input type="text" placeholder="Enter Your Email">
+            <input type="text" placeholder="Enter Your Password">
+            <div class="btn-area">
+                <button type="button" class="btn2">LOGIN</button>
+            </div>
+            <p class="rem"><input type="checkbox">Keep me Signed in</p>
+        </form>
+    </div>
+</body>
+</html>
